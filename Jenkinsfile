@@ -1,7 +1,7 @@
 node{
       def dockerImageName= 'sherin11/javadedockerapp_$JOB_NAME:$BUILD_NUMBER'
       stage('SCM Checkout'){
-         git 'https://github.com/1305sherin/jenkinsfile'
+         git 'https://github.com/1305sherin/jenkinsfile/edit/master/Jenkinsfile'
       }
       stage('Build'){
          // Get maven home path and build
